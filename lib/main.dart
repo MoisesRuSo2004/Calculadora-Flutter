@@ -2,7 +2,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const CalculatorScreen());
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const CalculatorScreen(),
+    ),
+  );
 }
 
 class CalculatorScreen extends StatefulWidget {
